@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
   "dependencies": {
+    "fetch-cookie": "^0.11.0",
     "node-fetch": "^2.6.1",
     "whatwg-fetch": "^3.4.1"
   },
