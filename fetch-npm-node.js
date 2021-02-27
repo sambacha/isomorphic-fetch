@@ -1,11 +1,13 @@
 "use strict";
 
 var realFetch = require('node-fetch');
+var fetch = require('fetch-cookie')(realFetch);
+
 module.exports = function(url, options) {
 	if (/^\/\//.test(url)) {
 		url = 'https:' + url;
 	}
-	return realFetch.call(this, url, options);
+	return fetch.call(this, url, options);
 };
 
 if (!global.fetch) {
